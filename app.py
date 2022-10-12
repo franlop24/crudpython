@@ -78,6 +78,7 @@ if __name__ == '__main__':
             edit_element()
         elif opcion == '5':
             print("Eliminar Elemento")
+            remove_element()
         elif opcion == '6':
             print('Bye!')
             break
