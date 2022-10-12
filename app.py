@@ -48,6 +48,23 @@ def edit_element():
     id = int(input('Ingresa el ID del elemento a editar: '))
     found = find_element(id)
     print(found)
+    index = lista_elements.index(found)
+    name = input("Ingresa el nuevo nombre, deja en blanco para conservar: \n")
+    last_name = input("Ingresa el nuevo apellido, deja en blanco para conservar: \n")
+    if name != '':
+        lista_elements[index]['name'] = name
+    if last_name != '':
+        lista_elements[index]['last_name'] = last_name
+    '''name = input("Ingresa el nuevo nombre de la persona: ")
+    last_name = input('Ingresa el nuevo apellido de la persona: ')
+    person = {
+        "id": id,
+        "name": name,
+        "last_name": last_name
+    }
+    lista_elements.remove(found)
+    lista_elements.append(person)'''
+
 
 if __name__ == '__main__':
     menu = '''
